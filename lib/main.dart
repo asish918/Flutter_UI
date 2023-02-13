@@ -14,7 +14,7 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       title: 'The Flutter Way',
       theme: ThemeData(
-        scaffoldBackgroundColor: Color(0xFFEEF1F8),
+        scaffoldBackgroundColor: const Color(0xFFEEF1F8),
         primarySwatch: Colors.blue,
         fontFamily: "Intel",
         inputDecorationTheme: const InputDecorationTheme(
@@ -27,6 +27,7 @@ class MyApp extends StatelessWidget {
           errorBorder: defaultInputBorder,
         ),
       ),
+      debugShowCheckedModeBanner: true,
       home: const OnboardingScreen(),
     );
   }
@@ -36,6 +37,6 @@ const defaultInputBorder = OutlineInputBorder(
   borderRadius: BorderRadius.all(Radius.circular(16)),
   borderSide: BorderSide(
     color: Color(0xFFDEE3F2),
-    width: 1,
+    width: 5,
   ),
 );
