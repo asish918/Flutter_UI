@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
-import 'package:rive_animation/screens/components/sign_in_form.dart';
+import 'package:rive_animation/components/sign_in_form.dart';
 
 Future<Object?> customSignInDialog(BuildContext context,
     {required ValueChanged onClosed}) {

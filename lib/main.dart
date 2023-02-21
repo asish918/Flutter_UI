@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:rive_animation/screens/onboding/onboarding_screen.dart';
+import 'package:rive_animation/screens/onboarding_screen.dart';
 
 void main() {
   runApp(const MyApp());
@@ -28,7 +28,7 @@ class MyApp extends StatelessWidget {
         ),
       ),
       debugShowCheckedModeBanner: true,
-      home: const OnboardingScreen(),
+      home: const  OnboardingScreen(),
     );
   }
 }
