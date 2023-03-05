@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:rive_animation/components/side_menu.dart';
 import 'package:rive_animation/screens/onboarding_screen.dart';
 
 void main() {
@@ -8,7 +7,7 @@ void main() {
 
 class MyApp extends StatelessWidget {
   const MyApp({super.key});
-  
+
   // This widget is the root of your application.
   @override
   Widget build(BuildContext context) {
@@ -29,7 +28,7 @@ class MyApp extends StatelessWidget {
         ),
       ),
       debugShowCheckedModeBanner: true,
-      home: const  SideMenu(),
+      home: const OnboardingScreen(),
     );
   }
 }

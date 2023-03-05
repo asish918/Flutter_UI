@@ -3,7 +3,6 @@ import 'package:flutter_svg/svg.dart';
 
 import '../models/course.dart';
 
-
 class CourseCard extends StatelessWidget {
   const CourseCard({
     super.key,

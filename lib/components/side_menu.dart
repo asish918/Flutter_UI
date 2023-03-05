@@ -14,7 +14,6 @@ class SideMenu extends StatefulWidget {
 }
 
 class _SideMenuState extends State<SideMenu> {
-
   RiveAsset selectedMenu = sideMenus.first;
 
   @override
@@ -22,7 +21,7 @@ class _SideMenuState extends State<SideMenu> {
     return Scaffold(
       body: Container(
         width: 288,
-        color: Color(0xFF17203A),
+        color: const Color(0xFF17203A),
         height: double.infinity,
         child: SafeArea(
           child: Column(
@@ -46,12 +45,14 @@ class _SideMenuState extends State<SideMenu> {
                 (e) => SideMenuTile(
                   menu: e,
                   riveonInit: (artboard) {
-                    StateMachineController controller = RiveUtils.getRiveController(artboard, stateMachineName: e.stateMachineName);
+                    StateMachineController controller =
+                        RiveUtils.getRiveController(artboard,
+                            stateMachineName: e.stateMachineName);
                     e.input = controller.findSMI("active") as SMIBool;
                   },
                   press: () {
                     e.input!.change(true);
-                    Future.delayed(Duration(seconds: 1), () {
+                    Future.delayed(const Duration(seconds: 1), () {
                       e.input!.change(false);
                     });
                     setState(() {
@@ -82,7 +83,7 @@ class _SideMenuState extends State<SideMenu> {
                   },
                   press: () {
                     e.input!.change(true);
-                    Future.delayed(Duration(seconds: 1), () {
+                    Future.delayed(const Duration(seconds: 1), () {
                       e.input!.change(false);
                     });
                     setState(() {
